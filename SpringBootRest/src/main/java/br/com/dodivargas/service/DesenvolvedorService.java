@@ -1,11 +1,10 @@
 package br.com.dodivargas.service;
 
-import br.com.dodivargas.Exception.DesenvolvedorException;
+import br.com.dodivargas.exception.DesenvolvedorException;
 import br.com.dodivargas.dataBase.DesenvolvedorDAO;
 import br.com.dodivargas.modelo.Desenvolvedor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

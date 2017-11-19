@@ -1,6 +1,6 @@
 package br.com.dodivargas.dataBase;
 
-import br.com.dodivargas.Exception.DesenvolvedorException;
+import br.com.dodivargas.exception.DesenvolvedorException;
 import br.com.dodivargas.modelo.Desenvolvedor;
 
 import java.util.ArrayList;
