@@ -18,14 +18,15 @@ public class DesenvolvedorControle {
     private DesenvolvedorService desenvolvedorService = new DesenvolvedorService();
 
     @ResponseStatus(HttpStatus.OK)
-    @RequestMapping(value = "/listaDesenvolvedores",
-            method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Desenvolvedor> listaDesenvolvedores(){
         return desenvolvedorService.listaDesenvolvedores();
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @RequestMapping(value = "/criaDesenvolvedor",
+    @RequestMapping(
             method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
@@ -35,7 +36,7 @@ public class DesenvolvedorControle {
 
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(
-            value = "/deletaDesenvolvedor/{id}",
+            value = "/{id}",
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public Desenvolvedor excluiDesenvolvedor(@PathVariable(value = "id") Integer id) throws DesenvolvedorException {
@@ -44,7 +45,7 @@ public class DesenvolvedorControle {
 
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(
-            value = "/buscaDesenvolvedor/{id}",
+            value = "/{id}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public Desenvolvedor buscaDesenvolvedor(@PathVariable(value = "id") Integer id) throws DesenvolvedorException {
@@ -52,7 +53,7 @@ public class DesenvolvedorControle {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @RequestMapping(value = "/atualizaDesenvolvedor/{id}",
+    @RequestMapping(value = "/{id}",
             method = RequestMethod.PUT,
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
