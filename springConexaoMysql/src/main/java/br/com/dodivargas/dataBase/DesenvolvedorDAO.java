@@ -2,7 +2,6 @@ package br.com.dodivargas.dataBase;
 
 import br.com.dodivargas.exception.DesenvolvedorException;
 import br.com.dodivargas.modelo.Desenvolvedor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
