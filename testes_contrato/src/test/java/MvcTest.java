@@ -17,7 +17,6 @@ public class MvcTest {
 
     @Before
     public void setup() {
-        System.out.println(endpoint);
         RestAssuredMockMvc.standaloneSetup(endpoint);
     }
 
