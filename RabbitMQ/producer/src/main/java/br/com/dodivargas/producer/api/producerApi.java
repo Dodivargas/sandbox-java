@@ -11,7 +11,7 @@ public class producerApi {
     @Autowired
     private QueueSender queueSender;
 
-    @GetMapping
+    @PostMapping
     public void send(@RequestParam String mensagem) {
         queueSender.send(mensagem);
     }
