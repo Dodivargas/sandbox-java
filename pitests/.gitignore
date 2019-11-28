@@ -1,0 +1,17 @@
+/build/
+/bin/
+/logs/
+/.idea/
+/out/
+/temp-output/
+
+.DS_Store
+.gradle
+.settings
+.classpath
+.project
+.DS_Store
+.clover
+*.iml
+version.properties
+lib/
